@@ -1,4 +1,4 @@
-"""ControllerApplication for ZBOSS NCP protocol based adapters."""
+"""ControllerAreplication for ZBOSS NCP protocol based adapters."""
 import asyncio
 import logging
 import zigpy.util
@@ -463,7 +463,7 @@ class ControllerApplication(zigpy.application.ControllerApplication):
             )
         )
 
-    def permit_with_key(self, node, code, time_s=60):
+    def permit_with_link_key(self, node, code, time_s=60):
         """Permit with key."""
         raise NotImplementedError
 
